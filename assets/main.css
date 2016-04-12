@@ -1,0 +1,54 @@
+.sorting-box {
+    display: inline-block;
+    vertical-align: top;
+}
+.world-main {
+    display: inline-block;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+.world-main caption {
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.world-main thead {
+    background-color: green;
+}
+
+.world-main td, .world-main th {
+    padding: 7px;
+}
+
+.world-main th {
+    cursor: pointer;
+    color: #eee;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.world-main th:hover {
+    color: white;
+}
+
+.world-main tr:nth-child(2n) {
+    background-color: #ddd;
+}
+
+.world-main td {
+    border: 1px solid #ddd;
+}
+
+#loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: rgba(200, 200, 200, 0.5);
+    cursor: wait;
+}

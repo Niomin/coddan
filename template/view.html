@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>World database</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="assets/World.js"></script>
+    <link rel="stylesheet" href="assets/main.css">
+    <script type="text/javascript">
+        jQuery(function($) {
+            var world = '#!world!#';
+            World.show(world);
+        });
+    </script>
+</head>
+<body>
+<table class="world-main">
+    <caption>World database test</caption>
+    <thead></thead>
+    <tbody></tbody>
+</table>
+
+<div class="sorting-box">
+    <label>
+        Sort by ajax:
+        <input type="checkbox" id="sort-by-ajax">
+    </label>
+</div>
+<div id="loading"></div>
+</body>
+</html>
